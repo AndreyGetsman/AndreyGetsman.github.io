@@ -1,0 +1,152 @@
+body {
+    background-color: grey;
+    margin: 0px; 
+    font-family: 'Roboto';
+}
+
+.header {
+    background-color: black;
+    height: 50px;
+}
+
+.span1 {
+    line-height: 50px;
+}        
+
+.span2 {
+    font-size: 20px;
+    color: white;
+}
+
+.list {
+    font-size: 16px; 
+    color: white; 
+    text-decoration: none; 
+padding: 20px;
+}
+
+    
+.blog {
+    padding-right: 20px ;
+}
+
+.car {
+    background-image: url(./662836080.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    color: white; 
+    min-height: calc(100vh - 50px); 
+}
+
+.start {
+    padding: 150px; 
+    font-size: 150px;
+}
+
+.divbig {
+    background-color: grey;  
+}
+
+.trainings {
+    text-align: center; 
+    padding: 30px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.lorem {
+    text-indent: 20px; 
+    text-align: justify;
+}
+
+.demanded {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.button1 {
+    font-size: 12px;
+    float: left;
+    max-width: 20%;
+    min-width: 100px;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+.button1:hover {
+    border: solid 3px rgba(0, 0, 0, 0.727);
+}
+
+table {
+    background-color: white;
+    vertical-align: middle;
+    width: calc(100% - 50px);
+    font-size: 14px;
+    margin: 30px;
+    padding: 20px;
+}
+
+tr td {
+    padding: 5px;
+}
+
+tr > td {
+    width: 40%;
+}
+
+td:nth-of-type(2) {
+    width: 40%;
+}
+
+.zagolovok {
+    font-size: 18px;
+    color: blue;
+}
+
+.zagolovok a:active {
+    color: cadetblue;
+}
+
+.stoimost {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.button2 {
+    text-align: center;
+    padding: 5px 10px;
+    border-spacing: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+.button2_green {
+    background-color: rgb(101, 216, 101);
+    color: white;
+    border-bottom: solid 3px rgb(34, 142, 34);
+}
+
+.button2:hover {
+    background-color: rgb(34, 142, 34);
+}
+
+.button2:active {
+    background-color: rgb(21, 64, 21);
+}
+
+.button2_white {
+    background-color: white;
+    color: blue;
+    border: solid 1px black;
+}
+
+td:nth-of-type(3n) {color: red;}
+
+td a {
+    text-decoration: none;
+}
+
