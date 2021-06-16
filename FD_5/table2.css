@@ -1,0 +1,21 @@
+table {
+    color: blue;
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 2px blue;
+    font-size: 30px;
+}
+
+tr td {
+    padding: 20px;
+}
+
+tr:first-child {
+    font-size: 40px;
+    font-weight: 700;
+    border-bottom: dashed 2px;
+}
+
+td:first-of-type {
+    width: 20%;
+}
