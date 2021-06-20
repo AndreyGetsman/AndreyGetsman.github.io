@@ -11,9 +11,9 @@ tr td {
 }
 
 tr:first-child {
-    /* font-size: 40px; */
-    /* font-weight: 700; */
-    /* border-bottom: dashed 2px; */
+    font-size: 40px; 
+    font-weight: 700;
+    border-bottom: dashed 2px;
 }
 
 td:first-of-type {
