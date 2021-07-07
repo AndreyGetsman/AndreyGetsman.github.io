@@ -1,11 +1,10 @@
 li {
     width: 150px;
-    min-height: 20px;
     margin: 4px;
     padding: 3px;
     border: solid 2px blue;
 }
 
-li:hover:nth-child(2n+1) {
+ol:hover li:nth-child(-n+3) {
     background-color: green;
 }
