@@ -9,6 +9,6 @@ li:hover {
     background-color: green;
 }
 
-li:hover + li + li {
+li:hover ~ li {
     background-color: rgb(255, 78, 61);
 }
