@@ -1,0 +1,14 @@
+li {
+    width: 150px;
+    margin: 4px;
+    padding: 3px;
+    border: solid 2px blue;
+}
+
+li:hover {
+    background-color: green;
+}
+
+li:hover + li + li {
+    background-color: rgb(255, 78, 61);
+}

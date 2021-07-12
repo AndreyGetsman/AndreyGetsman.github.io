@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(169, 156, 156);
+    margin: 0;
+}
+
+.zagolovok {
+    font-size: 36px;
+    font-weight: 100;
+    margin: 10px 0px 50px 20px;
+}
+
+.chelovek_1 {
+    background-color: white;
+    width: calc(100% - 20px);
+    height: 370px;
+    margin: 10px;
+}
+
+.foto_1 {
+    border-radius: 100px;
+    width: 80px;
+    float: left;
+    margin: 30px;
+}
+
+.style_name {
+    font-size: 15px;
+    padding-top: 40px;
+}
+
+.style_doljnost {
+    font-size: 15px;
+    color: rgb(126, 130, 130);
+    padding-top: 15px;
+}
+
+.tema {
+    font-size: 25px;
+    padding: 30px 30px 15px;
+    clear: both;
+}
+
+div.opisanie {
+    overflow: auto;
+    width: calc(100% - 70px);
+    height: 100px;
+    padding: 10px 15px 15px 30px;
+}
+
+div a {
+    padding-left: 30px;
+    color: blue;
+    border-top: solid 30px rgba(255, 255, 255, 0.211);
+    text-decoration: none;
+}
