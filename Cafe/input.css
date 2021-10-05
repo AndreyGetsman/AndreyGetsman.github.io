@@ -1,0 +1,554 @@
+body {
+    margin: 0;
+    font-family: 'Grey Qo', cursive;;
+}
+
+header {
+    color: burlywood;
+}
+
+nav ul {
+    background-color: black;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdown li a {
+    font-family: 'Pacifico', cursive;;
+    font-size: 25px;
+}
+
+.dropdown li {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    background-color: rgb(0, 0, 0);
+    display: block;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    font-size: 35px;
+}
+
+li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+li:hover {
+    color: red;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    padding: 5px;
+    display: none;
+}
+
+ul li ul li:hover {
+    border: whitesmoke solid 1px;
+    background-color: rgba(145, 145, 138, 0.762);
+
+}
+
+nav ul:nth-child(2):hover {
+    color: violet;
+}
+
+nav ul:nth-child(2):hover .dropdown {
+    display: block;
+}
+
+ul li:hover > ul, ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  width: 100%;
+}
+
+nav ul li a:hover {
+    color: gold;
+    transition: all 0.5s ease;
+}
+
+.headtop {
+    display: flex;
+    background-color: rgb(76, 80, 79);
+    height: 230px;
+}
+
+.headbl1 {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 230px;
+}
+
+.loglink {
+    text-decoration: none;
+}
+
+.loggirl {
+    width: 230px;
+}
+
+.headbl2 {
+    width: 20%;
+    font-size: 100px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.headbl3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end ;
+    font-family: 'Pacifico', cursive;;
+    width: 30%;
+    color: rgba(255, 248, 248, 0.632);
+}
+
+div.headbl3 a:hover {
+    text-shadow: white 3px 3px 3px
+}
+
+.imglogo {
+    width: 25px;
+    margin: 3px 0 0 5px;
+    transition: width 0.21s;
+}
+
+.imglogo:hover {
+    width: 28px;
+}
+
+div.headbl3 a {
+    margin-top: 5px;
+    margin-left: 240px;
+    text-decoration: none;
+    display: flex;
+    color: rgba(47, 38, 38, 0.972);
+    text-shadow: rgb(251, 237, 31) 1px 1px 1px;
+}
+
+div.headbl3 a:hover {
+    transform: scale(1.2);
+}
+
+div.headbl3 a span {
+    font-size: 30px;
+    color: rgba(47, 38, 38, 0.972);
+    text-shadow: rgb(251, 237, 31) 1px 1px 1px;
+}
+
+.headbutton {
+    height: 40px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+/* 
+.linkshdbtn {
+    display: flex;
+    padding-left: 30px;
+}
+
+div.linkshdbtn a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    border-right: 2px solid rgb(79, 141, 155) ;
+    padding: 0 110px;
+} 
+
+div.linkshdbtn input {
+    margin-left: 70px;
+    background-color: rgba(90, 88, 88, 0.694);
+} */
+
+nav ul div {
+    display: flex;
+    align-items: center;
+}
+
+input[type="search"] {
+    height: 30px;
+    letter-spacing: 2px;
+}
+
+button[type="submit"] {
+    height: 30px;
+    background-color: rgba(90, 88, 88, 0.694);
+    color: white;
+}
+
+div.linkshdbtn a:hover {
+    color: gold;
+    transform: scale(1.2);
+}
+
+.input {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fonosnova {
+    background-image: url(./images/fon\ osnova.jpg);
+    background-size: cover;
+    width: auto;
+    height: 465px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnnextright {
+    margin-right: 20px;    
+}
+
+.btnnextright span, .btnnextleft span {
+    font-size: 80px;
+    color: blanchedalmond;
+    text-shadow: 1px 2px 3px black;
+}
+
+.btnnextleft {
+    margin-left: 20px;
+}
+
+.btnnextleft:hover, .btnnextright:hover{
+    background-color: cadetblue;
+    background-size: cover;
+    width: auto;
+    height: 100px;
+}
+
+.btnreadmore {
+    position: relative;
+    top: 87px;
+    left: -426px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    border-radius: 5%;
+    color: rgb(7, 9, 10);
+    height: 80px;
+    width: auto;
+    background-color: rgba(248, 248, 248, 0.748);
+}
+
+.btnreadmore:hover {
+    box-shadow: rgba(20, 20, 19, 0.694) 7px 5px 3px;
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+}
+
+.natproduct {
+    font-family: 'Pacifico', cursive;;
+    position: relative;
+    left: 180px;
+    font-size: 50px;
+    color: lavender;
+    text-shadow: rgba(30, 19, 19, 0.904) 5px 5px 5px;
+}   
+
+.mainblock2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(76, 80, 79);
+}
+
+.blchizcake {
+    background-image: url(./images/chizcake.jpg);
+    border: black 3px solid;
+    background-size: cover;
+    width: 420px;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    margin: 30px 0px 30px 0px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.blchizcake:hover, .bltiramisu:hover {
+    transition: all 1s ease-out;
+    transform: scale(1.1);
+}
+
+.blchizcake a {
+    position: relative;
+    top: 43px;
+    right: 285px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: black 3px 3px 3px;
+    font-style: italic;
+}
+
+
+.blchizcake a:hover, .bltiramisu a:hover {
+    color: rgb(255, 204, 65);
+    text-shadow: rgba(20, 20, 16, 0.938) 1px 1px 1px;
+    transform: scale(1.2);
+}
+
+.blchizcake div, .bltiramisu div {
+    font-size: 30px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: blanchedalmond;
+    text-shadow: black 3px 3px 3px;
+}
+
+.bltiramisu {
+    background-image: url(./images/tiramisu.jpg);
+    border: black 3px solid;
+    background-size: cover;
+    width: 420px;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    margin: 30px 0px 30px 0px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.bltiramisu a {
+    position: relative;
+    top: 43px;
+    right: 140px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: black 3px 3px 3px;
+    font-style: italic;
+}
+
+.cupcoffe2 {
+    background-image: url(./images/cup\ coffe\ fon\ 2.jpg);
+    background-size: cover;
+    width: auto;
+    height: 500px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+div.cupcoffe2 > div {
+    color: lavender;
+    font-family: 'Pacifico', cursive;;
+    font-size: 60px;
+    padding-left: 30px;
+    text-shadow: rgba(30, 19, 19, 0.904) 5px 5px 5px;
+}
+
+.blzakaz {
+    background-color: rgba(0, 0, 0, 0.774);
+    width: 99%;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.blzakaz a {
+    width: 300px;
+    height: 100px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: 'Grey Qo', cursive;;
+    font-size: 16px; 
+    display: flex;
+    justify-content: start;
+}
+
+.blzakaz a > div:first-child {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(146, 143, 140, 0.877);
+}
+
+.cuplogo {
+    background-image: url(./images/cuplogo.png);
+    background-size: contain;
+    width: 66px;
+    height: 66px;
+    display: flex;
+    position: relative;
+    left: -83px;
+    top: 10px;
+}
+
+.blzakaz a > div:last-child {
+    color: blanchedalmond;
+    position: relative;
+    left: -47px;
+    top: 31px;
+}
+
+.blzakaz a:hover > div:first-child {
+    background-color: coral;
+}
+
+.sirop {
+    background-image: url(./images/sirop.png);
+    background-size: contain;
+    width: 66px;
+    height: 69px;
+    display: flex;
+    position: relative;
+    left: -84px;
+    top: 14px;
+}
+
+footer {
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    background-size: cover;
+    width: 100px;
+    height: 66%
+}
+
+footer a:first-child {
+    background-image: url(./images/соцсети/instagram_108043.png);
+}
+
+footer a:nth-child(2) {
+    background-image: url(./images/соцсети/vkontakte_icon-icons.com_69251.png);
+}
+
+footer a:nth-child(3) {
+    background-image: url(./images/соцсети/tik_tok_logo_icon_147226.png);
+}
+
+footer a:nth-child(4) {
+    background-image: url(./images/соцсети/Youtube_36365.png);
+}
+
+footer a:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.2);
+}
+
+@media (max-width: 1320px) {
+    div.headbl3 a {
+        margin-top: 5   0px;
+        width: 150px;
+        font-size: 14px;
+    }
+
+    .headbl1 {
+        display: flex;
+        justify-content: start;
+    }
+
+    .headbl2 {
+        position: absolute;
+        left: 233px;
+    }
+
+    .headbl3 {
+        position: absolute;
+        left: 420px;
+    }
+}
+
+@media (max-width: 1008px) {
+    .btnreadmore {
+        top: 97px;
+        left: -412px;
+    }
+
+    .natproduct {
+        font-size: 50px;
+        left: 100px;
+        top: -80px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .natproduct {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+}
+
+
+@media (max-width: 900px) {
+    .blchizcake, .bltiramisu {
+        width: 258px;
+        height: 160px;
+    }
+
+    .blchizcake a {
+        top: 116px;
+        right: 189px;
+    }
+
+    .bltiramisu a {
+        top: 116px;
+        right: 153px;
+    }
+    
+    .natproduct {
+        font-size: 50px;
+        left: 10px;
+        top: -80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .headbl3 {
+        position: absolute;
+        left: 320px;
+        top: 150px;
+    }
+
+    .btnnextleft, .btnnextright {
+        display: none;
+    }
+
+    .natproduct {
+        font-size: 43px;
+        left: 142px;
+        top: -42px;
+    }
+
+    .btnreadmore {
+        left: -352px;
+        top: 98px;
+    }
+}

@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+header {
+    height: 30px;
+    color: burlywood;
+    display: flex;
+    background-color: black;  
+}
+
+.wglogo {
+    width: 3%;
+}
+
+.imglogo {
+    width: 25px;
+    margin: 3px 0 0 5px;
+    transition: width 0.21s;
+}
+
+.imglogo:hover {
+    width: 28px;
+}
+
+.links {
+    width: 85%;
+    padding-top: 3px;
+}
+
+.header_link {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(208, 197, 197, 0.707);
+    padding-left: 10px;
+}
+
+.header_link:hover {
+    color: white;
+}
+
+div.links > a:nth-child(3) {
+    color: gold;
+}
+
+div.links > a:nth-child(3):hover {
+    color: white;
+}
+
+span.material-icons {
+    font-size: 16px;
+    position: relative;
+    top: 5px;
+}
+
+.input {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fonosnova {
+    width: 100%;
+}
+
+.fonosnova2 {
+    width: 100%;
+}
+
+.tank1 {
+    width: 100%;
+}
+
+.tank2 {
+    display: none;
+    height: auto;
+}
+
+.btnnextright {
+    width: 150px;
+    height: 750px;
+    position: absolute;
+    right: 1px;
+}
+
+.btnnextright span {
+    position: relative;
+    top: 350px;
+    right: -33px;
+    font-size: xxx-large;
+    color: blanchedalmond;
+    text-shadow: 1px 2px 3px black;
+}
+
+.btnnextright:hover {
+    background-image: url(./images/anypics.ru-55172.jpg);
+    transition: all 5s ease;
+}
+
+

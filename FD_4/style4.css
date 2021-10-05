@@ -7,6 +7,37 @@ body {
 .header {
     background-color: black;
     height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block_tab {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block:target {
+    background-color: rgba(199, 202, 131, 0.496); 
+    display: block;
+}
+
+.block {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.content {
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    right: 400px;
+    bottom: auto;
+    padding: 10px;
 }
 
 .span1 {
@@ -22,7 +53,7 @@ body {
     font-size: 16px; 
     color: white; 
     text-decoration: none; 
-padding: 20px;
+    padding: 20px;
 }
 
     
@@ -85,8 +116,8 @@ table {
     vertical-align: middle;
     width: calc(100% - 50px);
     font-size: 14px;
-    margin: 30px;
     padding: 20px;
+    min-width: 900px;
 }
 
 tr td {
@@ -146,7 +177,89 @@ td:nth-of-type(2) {
 
 td:nth-of-type(3n) {color: red;}
 
+.login {
+    color: white; 
+    position: relative; 
+    top: 15px; 
+    right: 15px;
+}
+
 td a {
     text-decoration: none;
+}
+
+body {
+    background-color: rgb(169, 156, 156);
+    margin: 0;
+}
+
+.zagolovok {
+    font-size: 36px;
+    font-weight: 100;
+    margin: 10px 0px 50px 20px;
+}
+
+.chelovek_1 {
+    background-color: white;
+    width: calc(100% - 20px);
+    height: 370px;
+    margin: 10px;
+}
+
+.foto_1 {
+    border-radius: 100px;
+    width: 80px;
+    float: left;
+    margin: 30px;
+}
+
+.style_name {
+    font-size: 15px;
+    padding-top: 40px;
+}
+
+.style_doljnost {
+    font-size: 15px;
+    color: rgb(126, 130, 130);
+    padding-top: 15px;
+}
+
+.tema {
+    font-size: 25px;
+    padding: 30px 30px 15px;
+    clear: both;
+}
+
+div.opisanie {
+    overflow: auto;
+    width: calc(100% - 70px);
+    height: 100px;
+    padding: 10px 15px 15px 30px;
+}
+
+div a {
+    padding-left: 30px;
+    color: blue;
+    border-top: solid 30px rgba(255, 255, 255, 0.211);
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    div.start {font-size: 100px;}
+}
+
+@media (max-width: 440px) {
+    div.start {font-size: 50px;}
+}    
+
+@media (max-width: 295px) {
+    div.start {font-size: 20px;}
+}
+
+@media (max-width: 750px) {
+    .scroll {
+        overflow-x: scroll;
+        margin: 30px;
+    }
 }
 

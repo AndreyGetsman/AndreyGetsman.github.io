@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style_tabs.css">
+</head>
+<body>
+    <div class="window">
+            <div class="block">  
+                <div class="name">
+                    <label for="log">Login</label>
+                   
+                    <label for="reg">Register</label>
+                </div>
+
+                <hr>
+                
+                <input type="radio" name="tabs" id="log" checked >
+                <div class="content">
+                    
+                    <input type="text" name="username" placeholder="Username" checked>
+                    <input  class="pass" type="password" name="password" placeholder="Password">
+                    <label class="remember">
+                        <input type="checkbox" name="Remember me">Remember me         
+                    </label>
+                    <input class="submit" type="submit" name="submit" id="color_login" value="Log In" >
+                    <a href="" class="forgot_pass">Forgot Password?</a>
+                </div>
+
+                <input type="radio" name="tabs" id="reg">
+                
+                <div class="content">
+                    <input type="text" name="username" placeholder="Username" checked>
+                    <input class="mail" type="email" name="" placeholder="Email Address">
+                    <input class="pass" type="password" name="password" placeholder="Password">
+                    <input class="pass" type="password" name="password" placeholder="Confirm Password">
+                    <input class="submit" type="submit" name="submit" id="color_login" value="Log In" >
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

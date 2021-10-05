@@ -1,0 +1,102 @@
+body {
+    background-image: url(./roj.jpg);
+}
+
+
+.window {
+   position: absolute;
+   top: 100px;
+   left: 35%;
+   background-image: url(./fon_sploshnoy_pyatna_svet_65990_2048x1152.jpg);
+   background-size: 500px auto;
+}
+
+.block {
+    width: 500px;
+    height: auto;
+    border: solid 1px black;
+}
+
+.name {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px;
+}
+
+.content {
+    display: none; 
+    margin-left: 5px;
+    margin-right: 5px;
+} 
+
+input[type="radio"] {
+    display: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.remember {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 20px;   
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(8, 10, 7); 
+}
+
+.pass {
+    margin-top: 10px;
+}
+
+.mail {
+    margin-top: 10px;
+}
+
+.submit {
+    background-color: blue;
+    font-size: 30px;
+    color: rgb(199, 32, 32);
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.submit:hover {
+    background-color: rgb(33, 191, 33);
+}
+
+.forgot_pass {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.986);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(8, 10, 7); 
+}
+
+div.content > input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5%;
+    color: rgba(167, 163, 163, 0.591);
+    width: 400px;
+}
+
+#color_login {
+    color:white;
+    font-size: 25px;
+}
+
+input[type="radio"]:checked + div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    align-items: center;
+} 
+label:hover {
+    color: rgb(48, 238, 48);
+}

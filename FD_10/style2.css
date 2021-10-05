@@ -1,0 +1,13 @@
+.block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.block div {
+    background-color: green;
+    width: 300px;
+    padding: 10px;
+    margin: 15px;  
+}
