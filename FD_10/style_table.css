@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    background-color: white;
+    font-size: 16px;
+}
+
+div button{
+    border-radius: 10%;
+    border-width: 0;
+    padding: 8px;
+    color: white;
+    background-color: red;
+}
+button:hover {
+    box-shadow: 12px 4px 5px 0px rgba(135, 255, 50, 0.58);
+}
+
+div button:first-child {
+    background-color: blue;
+}
+
+main div div span.material-icons {
+    display: none;
+}
+
+main {
+    overflow-y: scroll;
+    height: calc(100vh - 80px);
+}
+
+div.table > div {
+    padding-left: 10px;
+}
+
+body div > div.table {
+    font-size: 14px; 
+}
+
+.table:nth-child(even) {
+    background-color: rgba(177, 170, 170, 0.442);
+}
+
+.table div:first-child {
+    width: 50px;
+}
+
+.table div:nth-child(2) {
+    flex-grow: 1;
+}
+
+.table div:nth-child(3) {
+    width: 120px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.table div:nth-child(3) button:nth-child(2) {
+    margin-left: 8px;
+}
+
+.table div:last-child {
+    width: 120px;
+}
+
+footer > div {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    footer div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 12px;
+    } 
+
+    span.material-icons {
+        font-size: 12px;
+    }
+
+    div button {
+        display: none;
+    }
+
+    main div div span.material-icons {
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+    }
+    
+    main div div {
+        display: flex;
+        flex-direction: row;
+    }
+}

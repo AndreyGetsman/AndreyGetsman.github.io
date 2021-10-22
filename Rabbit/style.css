@@ -1,0 +1,254 @@
+@font-face {
+    font-family: bebas;
+    src: url(./assets/BebasNeueRegular.ttf);
+}
+@font-face {
+    font-family: marie;
+    src: url(./assets/StMarie-Thin.otf);
+}
+
+body {
+    margin: 0;
+    font-family: marie;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 3px orange solid;
+}
+
+header > div {
+    flex-grow: 1;
+    max-width: 1200px;
+    display: flex;
+    height: 115px;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content > div {
+    max-width: 1200px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.orange_text {
+    font-size: 25px;
+    color: orange;
+    font-weight: 400;
+    padding: 0 30px;
+}
+
+.rabbit_text {
+    font-size: 30px;   
+    font-weight: 400;
+    color: rgb(88, 73, 73);
+}
+
+.ssilki {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-size: 25px;
+}
+
+.ssilki a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    height: 50px;
+    padding-left: 30px;
+    color: grey;
+}
+
+.ssilki > a > img {
+    width: 50px;
+    height: 50px;
+    color: grey;
+}
+
+.orange {
+    background-image: url(./assets/big-orange-bg.png);
+    background-size: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: solid 3px orange;
+    margin-top: 100px;
+}
+
+.like_rabbits {
+    margin-left: 50px;
+    font-size: 40px;
+    padding: 10px;
+    background-color: rgba(25, 24, 24, 0.694);
+    color: orange;
+
+}
+
+.like_oranges {
+    margin: 40px 0 0 50px;
+    font-size: 40px;
+    padding: 10px;
+    background-color: rgba(255, 166, 0, 0.625);
+    color:rgba(25, 24, 24, 0.802);
+
+}
+
+.lorem {
+    margin-top: 30px;
+    display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.lorem > div {
+    width: 230px;
+	padding-left: 40px;
+    text-align: left;
+    font-weight: 800;
+}
+
+.lorem a {
+    text-decoration: none;
+    color: orange;
+    font-style: oblique;
+}
+
+
+.team {
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+    text-decoration: underline;
+}
+
+.zayci {
+    margin-top: 30px;
+    display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.professiya {
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+
+.professiya_orange {
+    color: orange;
+}
+
+.rabbit_size {
+    margin-top: 15px;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px 0px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: orange 5px solid;
+}
+
+.rabbit_size_1 {
+    background-image: url(./assets/rabbit1.jpg);
+}
+
+.rabbit_size_2 {
+    background-image: url(./assets/rabbit2.jpg);
+}
+
+.rabbit_size_3 {
+    background-image: url(./assets/orange.jpg);
+}
+
+.lorem_rabbit {
+    margin-top: 15px;
+    width: 300px;
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 70px;
+    
+}
+
+
+.team_send {
+    margin-top: 50px;   
+}
+
+.mail div {
+    margin: 5px;
+    display: flex;
+}
+
+.name_width { 
+    font-size: 25px;
+    color: orange;
+    width: 120px;
+    
+}
+
+input {
+    min-width: 80%;
+    background-color: rgba(186, 180, 180, 0.51);
+    border-width: 3px 0 0 3px; 
+    border-color: rgba(115, 111, 111, 0.66);
+
+}
+
+.submit {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 200px;
+}
+
+.button {
+    color: white;
+    background-color: orange;
+    font-size: 30px;
+    padding: 5px 15px;
+    border-width: 0 0 3px 0;
+    border-color: rgba(194, 183, 183, 0.51);
+}
+
+.foot {
+    background-color: orange;
+    color: white;
+    margin-top: 60px;
+    min-height: 70px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

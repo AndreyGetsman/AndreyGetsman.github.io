@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .menu ul li{
+        padding: 10px;
+        }
+        .menu ul > li:hover{
+        background-color: #f96;
+        }
+        .menu ul ul > li:hover{
+        background-color: #69e;
+        }
+        .menu ul li, .menu ul{
+        display: inline-block;
+        }
+        .menu ul{
+        position: relative;
+        margin: 0;
+        padding: 0;
+        background-color: #f63;
+        }
+        .menu ul ul{
+        display: none;
+        position: absolute;
+        background-color: #369;
+        margin-top: 10px;
+        margin-left: -10px;
+        }
+        .menu ul a{
+        color: #fff;
+        text-decoration: none;
+        }
+        .menu ul ul a{
+        color: #fff;
+        text-decoration: none;
+        }
+        .menu li:hover ul{
+        display: block;
+        }
+
+        .menu li:hover li{
+        display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+          <li><a href="#">Lorem.</a></li>
+          <li><a href="#">Explicabo?</a>
+          
+            <ul>
+              <li><a href="#">Lorem.2</a></li>
+              <li><a href="#">Eveniet.2</a></li>
+              <li><a href="#">Omnis.2</a></li>
+              <li><a href="#">Beatae.2</a></li>
+            </ul>
+          
+          </li>
+          <li><a href="#">Doloribus.</a></li>
+          <li><a href="#">Sint.</a></li>
+        </ul>
+      </nav>
+    
+</body>
+</html>

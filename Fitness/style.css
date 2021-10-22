@@ -1,0 +1,555 @@
+body {
+    margin: 0;
+}
+
+.head {
+    background-image: url(./images/hero-3.jpg.webp);
+    height: 950px;
+}
+
+.blockheader {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.activator {
+    background-image: url(./images/activator.jpg);
+    height: 25px;
+    background-size: cover;
+    width: 200px; 
+    margin-left: 100px;
+}
+
+.menu {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    margin-left: 200px;
+}
+
+.menu li {
+    margin-right: 50px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.menu a:hover {
+    color: red;
+    border-bottom: 1px red solid;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.menu ul {
+    display: none;
+    position: relative;
+    padding: 10px;
+    background-color: red;
+    color: blanchedalmond;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+.menu ul a:hover {
+    color: black;
+    border: none;
+}
+
+.join_us {
+    font-size: 60px;
+    color: honeydew;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.join_us div:first-child {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0px;
+}
+
+.join_us div:nth-child(2) {
+    font-size: 90px;
+}
+
+/* burger menu */
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 35px;
+    left: 48px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: blanchedalmond;
+    transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #808284;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+
+    color: #333;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition-duration: .25s;
+}
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+.read_btn {
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 2px;
+    width: 160px;
+    height: 46px;
+    border: 2px solid #e16521;
+    line-height: 45px;
+    border-radius: 4px;
+    background-color: rgba(240, 255, 240, 0);
+    text-decoration: none;
+}
+
+.read_btn:hover {
+    background-color: rgba(230, 128, 45, 0.836);
+}
+
+.training_block {
+    display: flex;
+}
+
+.training_block div {
+    width: 33%;
+    height: 380px;
+    background-size: cover;
+    display: flex;
+    flex-grow: 1;
+    color: blanchedalmond;
+}
+
+.training_block div h3 {
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 1px 4px 3px rgba(0,0,0,0.4);
+    margin: 0;
+}
+
+.training_block div p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.training_block div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.training_block div:nth-child(1) {
+    background-image: url(./images/training/1.jpeg);
+}
+
+.training_block div:nth-child(2) {
+    background-image: url(./images/training/2.jpg);
+}
+
+.training_block div:nth-child(3) {
+    background-image: url(./images/training/3.jpg);
+}
+
+.training_block .read_btn {
+    text-align: center;
+}
+
+.crossfit {
+    background-color: rgba(12, 11, 11, 0.918);
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.crossfit_block1 {
+    width: 40%;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    color: blanchedalmond;
+}
+
+.crossfit_block1 div:nth-child(1) {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.crossfit_block1 div:nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.crossfit_block1 div:nth-child(3) {
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #8f8fa8;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.crossfit_block2 {
+    background-image: url(./images/fitness-trainers-home-mumbai.jpg);
+    background-size: cover;
+    width: 40%;
+    height: 80%;
+    margin-top: 60px;
+    color: blanchedalmond;
+}
+
+.choose_program {
+    background-image: url(./images/search\ box\ background.png);
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blanchedalmond;
+}
+
+.choose_program div:first-child {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.choose_program div:last-child {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.training_block.training_crossfit div:nth-child(1) {
+    background-image: url(./images/crossfit/1.jpg);
+}
+
+.training_block div:nth-child(2) {
+    background-image: url(./images/crossfit/2.jpg);
+}
+
+.training_block div:nth-child(3) {
+    background-image: url(./images/crossfit/3.jpg);
+}
+
+.training_block div:nth-child(4) {
+    background-image: url(./images/crossfit/4.jpg);
+}
+
+.blog_block {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(12, 11, 11, 0.918);
+    width: 100%;
+    height: 880px;
+}
+
+.blog_block1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog_block1 div:first-child {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: blanchedalmond;
+    margin-top: 20px;
+}
+
+.blog_block1 div:last-child {
+    font-size: 16px;
+    font-family: "Nunito Sans",sans-serif;
+    color: #8f8fa8;
+    font-weight: 400;
+}
+
+.blog_block2 {
+    display: flex;
+}
+
+.blog_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 750px;
+    margin-left: 3%;
+    color: whitesmoke;
+    padding-top: 10px;
+}
+
+.blog_column a div:first-child {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+.blog_column a div:last-child {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.blog_block2 div a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.blog_column_top {
+    background-image: url(./images/blog/1.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 480px;
+}
+
+.blog_column_bottom {
+    background-image: url(./images/blog/5.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 100%;
+    margin-top: 5%;
+}
+
+
+.blog_column2_top {
+    background-image: url(./images/blog/6.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 200px;
+}
+
+.blog_column2_top div:last-child{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.blog_column2_bottom {
+    background-image: url(./images/blog/3.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 100%;
+    margin-top: 31px;
+}
+
+.blog_column3_top {
+    background-image: url(./images/blog/2.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 250px;
+}
+
+.blog_column3_bottom {
+    background-image: url(./images/blog/4.jpg);
+    background-size: cover;
+    width: 90%;
+    height: 100%;
+    margin-top: 31px;
+}
+
+@media (max-width: 1540px) {
+    .training_block, .crossfit {
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        align-items: center;
+        background-color: rgba(12, 11, 11, 0.918);
+    }
+
+    .crossfit_block1 {
+        margin: 20px 0px 0px 0px;
+    }
+ 
+    .crossfit_block2 {
+        align-items: center;
+        width: 70%;    
+    }
+}
+
+
+@media (max-width: 1220px) {
+    .blockheader {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        margin-left: 15px;
+    }
+
+    .training_block div h3 {
+        font-size: 20px;
+    }
+
+    .choose_program div:last-child {
+        align-items: center ;
+    }
+}
+
+@media (max-width: 705px) {
+    .blockheader div:nth-child(2) {
+        display: none;
+    }
+
+    .blog_block2 {
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(12, 11, 11, 0.918);
+
+    }
+
+    .blog_block1 div:last-child {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .training_block div h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .training_block div p {
+        font-size: 12px;
+    }
+
+    .read_btn {
+        width: 100px;
+    }
+
+    .join_us div:first-child {
+        font-size: 40px
+    }
+
+    .join_us div:nth-child(2) {
+        font-size: 35px
+    }
+
+    .crossfit_block1 div:nth-child(1) {
+        font-size: 30px;
+    }
+    
+    .choose_program div:first-child {   
+        font-size: 25px;
+    }
+
+    .crossfit_block2 {
+        display: none;
+    }
+
+    .crossfit {
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .blog_column a div:last-child {
+        font-size: 16px;
+    }
+}
+
+/* @media (max-width: 480px) {
+    .training_block div h3 {
+        text-align: center;
+} */
