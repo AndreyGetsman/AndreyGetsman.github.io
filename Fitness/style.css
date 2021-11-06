@@ -200,10 +200,13 @@ body {
 
 .training_block {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .training_block div {
-    width: 33%;
+    flex-grow: 1;
+    min-width: 400px;
+    flex-basis: 0;
     height: 380px;
     background-size: cover;
     display: flex;
@@ -451,13 +454,13 @@ body {
 }
 
 @media (max-width: 1540px) {
-    .training_block, .crossfit {
+    /* .training_block, .crossfit {
         display: flex;
         flex-direction: column;
         height: 900px;
         align-items: center;
         background-color: rgba(12, 11, 11, 0.918);
-    }
+    } */
 
     .crossfit_block1 {
         margin: 20px 0px 0px 0px;
@@ -547,9 +550,13 @@ body {
     .blog_column a div:last-child {
         font-size: 16px;
     }
+
+    .blog_column {
+        width: auto;
+    }
+
+    .training_block div {
+        width: 100%;
+    }
 }
 
-/* @media (max-width: 480px) {
-    .training_block div h3 {
-        text-align: center;
-} */
