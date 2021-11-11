@@ -151,7 +151,10 @@ header > div {
 	flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
+<<<<<<< HEAD
     flex-wrap: wrap;
+=======
+>>>>>>> 80ba5a59aaf5245f1cdc1df3cd221aefd3763906
 }
 
 .professiya {
@@ -252,6 +255,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
 }
 
 @media (max-width: 1650px) {
@@ -318,4 +322,6 @@ input {
         font-size: 20px;
         text-align: center;
     }
+=======
+>>>>>>> 80ba5a59aaf5245f1cdc1df3cd221aefd3763906
 }

@@ -86,10 +86,18 @@ div.content > input {
     width: 400px;
 }
 
+<<<<<<< HEAD
 #color_login {
     color:white;
     font-size: 25px;
 }
+=======
+#color_login {  
+    color:white;
+    font-size: 25px;
+} 
+/* заменить id на класс */
+>>>>>>> 80ba5a59aaf5245f1cdc1df3cd221aefd3763906
 
 input[type="radio"]:checked + div {
     display: flex;
