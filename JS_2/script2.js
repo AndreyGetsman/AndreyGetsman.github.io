@@ -1,16 +1,14 @@
 'use strict'
 
-let i = 4;
+let a = +prompt();
+let b = +prompt();
 
-while (i <= 10) {
-    console.log(i);
-    i++;
+if (a > b) {
+    let c = a;
+    a = b;
+    b = c;
 }
 
-
-let a = 24;
-
-while (a >= 15) {
-    console.log(a);
-    --a;
+for (let i = a; i < b; i++) {
+    console.log(i);
 }

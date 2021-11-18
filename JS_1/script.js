@@ -14,7 +14,7 @@ console.log(e);
 let f = 789;
 let g = 345;
 let t = 123;
-let q = (f-g-t);
+let q = f-g-t;
 console.log(q);
 
 // let x = 6;
@@ -41,8 +41,8 @@ console.log(x);
 
 let r = 10;
 let h = 3;
-let V = 3.14 * r * h;
-let S = 2 * 3.14 * r * (r + h);
+let V = Math.PI * r * h;
+let S = 2 * Math.PI * r * (r + h);
 console.log(V);
 console.log(S);
 
