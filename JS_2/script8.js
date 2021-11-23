@@ -1,18 +1,13 @@
 'use strict'
 
 let a = (Math.round(Math.random() * 10));
-let n = +prompt();
   
-if (a === n) {
-} else {
-    console.log(a);
+for (let i = 0; i < 5; i++) {
+    let n = +prompt();
+    if ( a === n) {
+        alert('true');
+        break;
+    } 
 }
-
-if ( a <= 10 || a >= 0) {
-} else {
-    console.log('False')
-}    
-
-
 
 
