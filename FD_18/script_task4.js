@@ -1,4 +1,4 @@
-'use stcrict'
+'use strict'
 
 let str = String(prompt());
 console.log(str);

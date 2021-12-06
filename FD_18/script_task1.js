@@ -1,6 +1,6 @@
 'use strict'
 
-let browser = String(prompt());
+let browser = prompt();
 
 switch(browser) {
     case 'Edge' :

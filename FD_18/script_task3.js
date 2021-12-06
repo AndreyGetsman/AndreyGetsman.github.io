@@ -1,13 +1,12 @@
-'use stcrict'
+'use strict'
 
-let str = String(prompt());
+let str = prompt();
 console.log(str);
 let counter = 0;
 
-for (let i = 0; i < str.length; i++) {
-    let char = str[i];  
+for (let i = 0; i < str.length; i++) { 
 
-    if ((char.toUpperCase()) === char) {
+    if (str[i].toUpperCase() === str[i]) {
         counter++;
     } 
 
