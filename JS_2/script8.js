@@ -9,5 +9,5 @@ for (let i = 0; i < 5; i++) {
         break;
     } 
 }
-
+    console.log(a); 
 
