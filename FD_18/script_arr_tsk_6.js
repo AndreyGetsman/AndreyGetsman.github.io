@@ -2,8 +2,7 @@ let arr = [];
 let max = 0;
  
 for (let i = 0; i < 10; i++) {
-    let item = (Math.round(Math.random() * 100)); // item = 32 number
-    // arr = item; // arr === 32
+    let item = (Math.round(Math.random() * 100)); 
     arr.push(item);
 }
 console.log(arr);
