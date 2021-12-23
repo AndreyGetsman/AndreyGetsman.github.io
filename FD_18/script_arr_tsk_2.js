@@ -1,18 +1,22 @@
 'use strict'
 
 let str = 'hello java script';
-let arr = str.split('');
+let arr = [];
 
+for (let i = 0; i < str.length; i++) {
+    arr.push(str[i]); 
+}
 console.log(arr);
 
 
 
 
-// let str = prompt('fgd sdf hjj');
-// let arr = [];
+// let str = 'hello java script';
+// let arr = str.split('');
 
-// if (str > 0) {
-//     arr = Object(str);
-//     console.log(arr);
-// }
+// console.log(arr);
+
+
+
+
 

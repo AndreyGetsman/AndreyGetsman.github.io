@@ -4,11 +4,9 @@ let str = prompt();
 console.log(str);
 let previousword = '';
 let counter = 0;
-let arr = [];
 
 for (let i = 0; i < str.length; i++) {
     let words = str[i];
-    arr.push(words);
 
     if (words === ' ' && previousword !== ' ') {
         counter++;
@@ -18,6 +16,5 @@ for (let i = 0; i < str.length; i++) {
 }
 
 console.log(counter + 1);
-
 
 
