@@ -8,73 +8,45 @@
 
 'use strict'
 
-let num1 = prompt();
+let num1 = +prompt(); 
+ 
+function lastNum (number) { // number
+    let last = number % 10; // number
+    let result; //string
+    switch(last) { // 
+        case 1 : 
+        	result = 'one';
+        break; 
+        case 2 : 
+        	result = 'two'; 
+        break; 
+        case 3 : 
+        	result = 'three'; 
+        break; 
+        case 4 : 
+        	result = 'four'; 
+        break; 
+        case 5 : 
+        	result = 'five'; 
+        break; 
+        case 6 : 
+        	result = 'six'; 
+        break; 
+        case 7 : 
+        	result = 'seven'; 
+        break; 
+        case 8 : 
+        	result = 'eight'; 
+        break; 
+        case 9 : 
+        	result = 'nine'; 
+        break; 
+    } 
+    return result;
+} 
 
-function lastNum () {
-    let num2 = num1 % 10;
-    switch(num2) {
-        case '1' : console.log('one');
-        break;
-        case '2' : console.log('two');
-        break;
-        case '3' : console.log('three');
-        break;
-        case '4' : console.log('four');
-        break;
-        case '5' : console.log('five');
-        break;
-        case '6' : console.log('six');
-        break;
-        case '7' : console.log('seven');
-        break;
-        case '8' : console.log('eight');
-        break;
-        case '9' : console.log('nine');
-        break;
-    }
-    
-    console.log(num2);
-}
+console.log('last number:' + lastNum(num1));
+console.log(lastNum(num1) + 'last number');
 
-console.log(lastNum());
-    
-
-
-// let browser = prompt();
-
-// switch(browser) {
-//     case 'Edge' :
-//     case 'IE' :
-//     case 'Opera' : {
-//         console.log('partial support');
-//         break;
-//     }
-//     case 'Chrome' :
-//     case 'Mozila' :
-//     case 'Safari' : {
-//         console.log('support');
-//         break;
-//     }
-//     default : {
-//         console.log('not support');
-//     }
-// }
-
-// function maxNumber(arr) {
-//     let max = arr[0];
-
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i] > max) {
-//             max = arr[i];
-//         }
-//     }
-//     return max;
-// }
-
-// let arr = [2, 5, 4, 8, 7, 9];
-// let arr1 = [6, 3, 4, 8, 2, 1];
-
-// console.log(maxNumber(arr));
-// console.log(maxNumber(arr1));
 
 
