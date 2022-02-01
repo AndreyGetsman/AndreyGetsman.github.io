@@ -7,15 +7,14 @@
 'use strict'
 
 let num1 = +prompt();
-let sum = 0;
 
-
-function sumNumber(num) {
-    for(let i = 0; i < num1.length; i++) {
-        sum = num1[i] + 1;
+function sumNumber(a) {
+    a = String(a);
+    for(let i = 0; i < a.length; i++) {
+        sum = a1[i] + 1;
     }
     return sum;
 
 }
 
-console.log(sumNumber(sum));
+console.log(sumNumber(num1));

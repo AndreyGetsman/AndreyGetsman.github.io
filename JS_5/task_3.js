@@ -4,15 +4,17 @@
 
 'use strict'
 
-function swapIndex(arr) {
-    let a = arr[0];
-    let b = arr[1];
+function swapIndex(arr, index1, index2) {
+    
 
-    arr[1] = a;
-    arr[0] = b;
+    let a = arr[index1];
+    let b = arr[index2];
+
+    arr[index2] = a;
+    arr[index1] = b;
     return arr;
 }   
 
-let arr1 = [5, 4];
+let arr1 = [5, 4, 2, 1, 6, 9];
 
-console.log(swapIndex(arr1));
+console.log(swapIndex(arr1, 3, 5));

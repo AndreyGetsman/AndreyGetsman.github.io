@@ -8,13 +8,13 @@
 
 let arr1 = [];
 
-function arrRandom(arr) {
+function arrRandom(arr, arrLegth) {
     
-    for(let i = 0; i < 8; i++) {
+    for(let i = 0; i < arrLegth; i++) {
         let item = (Math.round(Math.random() * 10));
         arr1.push(item);
     }
     return arr1;
 }   
 
-console.log(arrRandom(arr1));
+console.log(arrRandom(arr1, 9));

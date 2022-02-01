@@ -1,25 +1,20 @@
 'use strict'
 
 let arr = [1, 4, 3, 2, 5, 8, 7, 6, 4, 4, 9];
-let newArr = [];
 let swap;
+console.log(arr);   
 
-
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-        newArr.push(arr[i]);
-    }
-    
-    for (let k = 0; k < arr.length; k++) {
-        if (newArr[k] > newArr[k + 1]) {
-            swap = newArr[k];
-            newArr[k] = newArr[k + 1];
-            newArr[k + 1] = swap;
+for (let i = 0; i < arr.length; i+=2) {
+    for (let k = 0; k < arr.length; k+=2) {
+        if (arr[k] > arr[k + 2]) {
+            swap = arr[k];
+            arr[k] = arr[k + 2];
+            arr[k + 2] = swap;
         }
     }
 }
 
-console.log(newArr);
+console.log(arr);
 
 
     
